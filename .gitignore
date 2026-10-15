@@ -1,0 +1,17 @@
+# Ambientes Python e caches
+.venv/
+.venv-build/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Artefatos do empacotamento
+build/
+dist/
+*.spec.bak
+
+# Arquivos extraídos e potencialmente confidenciais
+saida/
+
+# Arquivos locais do Streamlit, exceto configuração compartilhada
+.streamlit/secrets.toml

@@ -1,0 +1,23 @@
+[project]
+name = "agente-comparador-pdf"
+version = "0.1.0"
+description = "Compara itens e quantidades entre catálogo e descrição técnica em PDF."
+requires-python = ">=3.11"
+dependencies = [
+  "pdfplumber>=0.11",
+]
+
+[project.optional-dependencies]
+interface = [
+  "streamlit>=1.40",
+]
+
+[project.scripts]
+agente-pdf = "agente_pdf.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
